@@ -71,7 +71,6 @@ WantedBy=multi-user.target
 在 Google Chrome 的網址列中輸入
 <br>
 ```localhost:3000```
-### Done
 <br>
 如果看到 ```Welcome to Express``` 就是成功了。
 
@@ -90,4 +89,5 @@ Read all of data
 Read a data with ID
 <br>
 ```localhost:3000/api/article/<your_id_here>
+<br>
 # All Done!
