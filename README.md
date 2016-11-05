@@ -14,7 +14,7 @@
 ### Step 2 - 進入專案資料夾
 ```cd bananapi-training-node.js-database```
 
-### Step 3 - 安裝 Node.js 與 MongoDB
+### Step 3 - 安裝 Node.js
 #### 安裝 Node.js 與 NPM
 <br>
 ```sudo apt-get update```
@@ -27,7 +27,7 @@
 <br>
 ```sudo apt-get install npm```
 <br>
-#### MongoDB
+#### Step 4 - Install and Config MongoDB
 <br>
 ```sudo apt-get install -y mongodb```
 <br>
@@ -54,7 +54,7 @@ WantedBy=multi-user.target
 <br>
 按ESC 之後以 ```:wq``` 儲存變更
 <br>
-#### 請確任全部動作安裝都執行過
+### Step 5 - 請確任全部動作安裝都執行過
 <br>
 在目錄裡下輸入
 <br>
@@ -62,6 +62,32 @@ WantedBy=multi-user.target
 <br>
 開啟 MongoDB 的服務
 <br>
-與
+與 伺服器
 <br>
 ```npm start```
+<br>
+### Step 6 - 測試看看是否成功！
+<br>
+在 Google Chrome 的網址列中輸入
+<br>
+```localhost:3000```
+### Done
+<br>
+如果看到 ```Welcome to Express``` 就是成功了。
+
+# Other information
+<br>
+新增 資料路徑
+<br>
+```localhost:3000/control/article/add```
+<br>
+Api 部分
+<br>
+Read all of data
+<br>
+```localhost:3000/api/article/```
+<br>
+Read a data with ID
+<br>
+```localhost:3000/api/article/<your_id_here>
+# All Done!
