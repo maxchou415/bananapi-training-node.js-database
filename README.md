@@ -57,6 +57,7 @@ WantedBy=multi-user.target
 #### 請確任全部動作安裝都執行過
 <br>
 在目錄裡下輸入
+<br>
 ```sudo service mongod start```
 <br>
 開啟 MongoDB 的服務
