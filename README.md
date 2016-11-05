@@ -7,6 +7,7 @@
 
 ### Step 1 - 抓下本專案
 開啟您指定的路徑下終端機，在終端機內輸入
+（以下全部步驟皆在 終端機 內部執行）
 <br>
 ```git clone https://github.com/maxyihsunchou/bananapi-training-node.js-database.git```
 
@@ -51,5 +52,15 @@ ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 WantedBy=multi-user.target
 ```
 <br>
-按ESC 之後以 :wq 儲存變更
+按ESC 之後以 ```:wq``` 儲存變更
 <br>
+#### 請確任全部動作安裝都執行過
+<br>
+在目錄裡下輸入
+```sudo service mongod start```
+<br>
+開啟 MongoDB 的服務
+<br>
+與
+<br>
+```npm start```
