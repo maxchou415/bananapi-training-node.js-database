@@ -49,7 +49,8 @@ Group=mongodb
 ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 
 [Install]
-WantedBy=multi-user.target```
+WantedBy=multi-user.target
+```
 <br>
 按ESC 之後以 ```:wq``` 儲存變更
 <br>
