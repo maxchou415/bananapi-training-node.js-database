@@ -76,16 +76,22 @@ WantedBy=multi-user.target
 
 ## Other information
 ### 新增 資料路徑
-```localhost:3000/control/article/add/```
+```
+localhost:3000/control/article/add/
+```
 <br>
 ### Api 部分
 <br>
 Read all of data
 <br>
-```localhost:3000/api/article/```
+```
+localhost:3000/api/article/
+```
 <br>
 #### Read a data with ID
 <br>
-```localhost:3000/api/article/<your_id_here>```
+```
+localhost:3000/api/article/<your_id_here>
+```
 <br>
 # All Done!
