@@ -11,22 +11,45 @@
 ```git clone https://github.com/maxyihsunchou/bananapi-training-node.js-database.git```
 
 ### Step 2 - 進入專案資料夾
-<br>
 ```cd bananapi-training-node.js-database```
 
 ### Step 3 - 安裝 Node.js 與 MongoDB
-安裝 Node.js 與 NPM
+#### 安裝 Node.js 與 NPM
+<br>
 ```sudo apt-get update```
 <br>
-Node.js
+#### Node.js
 <br>
 ```sudo apt-get install nodejs```
 <br>
-NPM
+#### NPM
 <br>
 ```sudo apt-get install npm```
 <br>
-MongoDB
+#### MongoDB
 <br>
 ```sudo apt-get install -y mongodb```
+<br>
+### Config MongoDB
+<br>
+```sudo vim /lib/systemd/system/mongod.service```
+<br>
+在此檔案內貼上以下文字
+<br>
+```
+[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+Documentation=https://docs.mongodb.org/manual
+
+[Service]
+User=mongodb
+Group=mongodb
+ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+
+[Install]
+WantedBy=multi-user.target
+```
+<br>
+按ESC 之後以 :wq 儲存變更
 <br>
