@@ -37,7 +37,7 @@
 <br>
 在此檔案內貼上以下文字
 <br>
-```
+```bash
 [Unit]
 Description=High-performance, schema-free document-oriented database
 After=network.target
@@ -49,8 +49,7 @@ Group=mongodb
 ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 
 [Install]
-WantedBy=multi-user.target
-```
+WantedBy=multi-user.target```
 <br>
 按ESC 之後以 ```:wq``` 儲存變更
 <br>
@@ -70,24 +69,22 @@ WantedBy=multi-user.target
 <br>
 在 Google Chrome 的網址列中輸入
 <br>
-#### localhost:3000
+
 <br>
 如果看到 Welcome to Express 就是成功了。
 
-# Other information
+## Other information
+### 新增 資料路徑
+```localhost:3000/control/article/add/```
 <br>
-新增 資料路徑
-<br>
-```localhost:3000/control/article/add```
-<br>
-Api 部分
+### Api 部分
 <br>
 Read all of data
 <br>
 ```localhost:3000/api/article/```
 <br>
-Read a data with ID
+#### Read a data with ID
 <br>
-```localhost:3000/api/article/<your_id_here>
+```localhost:3000/api/article/<your_id_here>```
 <br>
 # All Done!
