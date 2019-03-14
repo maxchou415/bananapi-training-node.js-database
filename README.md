@@ -16,28 +16,28 @@
 
 ### Step 3 - 安裝 Node.js
 #### 安裝 Node.js 與 NPM
-<br>
+
 ```sudo apt-get update```
-<br>
+
 #### Node.js
-<br>
+
 ```sudo apt-get install nodejs```
-<br>
+
 #### NPM
-<br>
+
 ```sudo apt-get install npm```
-<br>
+
 #### Step 4 - Install and Config MongoDB
-<br>
+
 ```sudo apt-get install -y mongodb```
-<br>
+
 ### Config MongoDB
-<br>
+
 ```sudo vim /lib/systemd/system/mongod.service```
-<br>
+
 在此檔案內貼上以下文字
-<br>
-```bash
+
+```
 [Unit]
 Description=High-performance, schema-free document-oriented database
 After=network.target
@@ -51,11 +51,11 @@ ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
 [Install]
 WantedBy=multi-user.target
 ```
-<br>
+
 按ESC 之後以 ```:wq``` 儲存變更
-<br>
+
 ### Step 5 - 請確任全部動作安裝都執行過
-<br>
+
 在目錄裡下輸入
 <br>
 ```sudo service mongod start```
@@ -67,11 +67,10 @@ WantedBy=multi-user.target
 ```npm start```
 <br>
 ### Step 6 - 測試看看是否成功！
-<br>
 在 Google Chrome 的網址列中輸入
-<br>
-
-<br>
+```
+http://localhost:3000/
+```
 如果看到 Welcome to Express 就是成功了。
 
 ## Other information
@@ -79,19 +78,16 @@ WantedBy=multi-user.target
 ```
 localhost:3000/control/article/add/
 ```
-<br>
+
 ### Api 部分
-<br>
 Read all of data
-<br>
+---
 ```
 localhost:3000/api/article/
 ```
-<br>
-#### Read a data with ID
-<br>
+Read a data with ID
+---
 ```
 localhost:3000/api/article/<your_id_here>
 ```
-<br>
 # All Done!
